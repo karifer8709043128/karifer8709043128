@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 10;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background: linear-gradient(135deg, rgb(65, 62, 62),rgba(0,0,0,0.2));
+    color: black;
+ */
+ background-image: url('img/event.jpg');
+ background-size: cover;
+color: white;
+}
+#grey{
+    color: aqua;
+}
+.button{
+    margin: auto;
+    padding: 5x;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-image:url(img/sunrise2.jpg) ;
+    color: white;
+}
+.button:hover{
+    transition: all .45s ease-in;
+    color: aqua;
+    cursor: pointer;
+}
+header {
+    min-height: 10vh;
+    background-size: cover;
+}
+header nav{
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items:center;
+    border-bottom: 1px solid black;
+}
+header nav .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .nav-right a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;    
+}
+
+header nav .nav-right a:hover{
+    transition: all .45s ease-in;
+    color: turquoise;
+    cursor: pointer;
+}
+header nav .nav-right .search > div{
+    background: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-left: 500px;
+}
+header nav .nav-right .search > div input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
+footer {
+    background: var(--dark);
+    padding: 60px 0;
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ }
+
+ footer .copyright span {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+footer .copyright img {
+    height: 30px;
+}
+
+footer h1 {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+footer h1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--pure);
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li:nth-child(even) {
+    margin: 10px 0;
+ }
+
+ footer ul li a {
+    color: var(--mild);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: var(--pure);
+ }
+
+ footer .footer-socials a {
+    margin-right: 20px;
+    font-size: 22px;
+    color: var(--mild);
+}
+
+footer .footer-socials a:hover {
+    color: var(--pure);
+}
